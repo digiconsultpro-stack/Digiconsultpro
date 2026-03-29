@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Results | DigiConsultPro — Real SEO & Digital Marketing Results</title>
+    <meta name="description"
+        content="Real Google Search Console results from DigiConsultPro's SEO and digital marketing campaigns. See actual clicks, impressions, and keyword ranking improvements.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #e8eaf0;
+            --white: #ffffff;
+            --black: #0a0a0a;
+            --grey: #888;
+            --accent: #00d4cc;
+            --accent2: #6c63ff;
+            --text-muted: #555;
+            --font: 'DM Sans', sans-serif;
+            --mono: 'IBM Plex Mono', monospace;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--black);
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ── HEADER ── */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(232, 234, 240, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .header-nav a {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--grey);
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover {
+            color: var(--black);
+        }
+
+        .btn-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.55rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.25s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-dark {
+            background: var(--black);
+            color: #fff;
+        }
+
+        .btn-dark:hover {
+            background: #222;
+            transform: translateY(-1px);
+        }
+
+        .btn-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: inline-block;
+        }
+
+        /* ── HERO ── */
+        .results-hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 10rem 3rem 5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .results-hero .eyebrow {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--grey);
+            margin-bottom: 1.5rem;
+        }
+
+        .results-hero h1 {
+            font-size: clamp(3rem, 7vw, 7rem);
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            line-height: 0.95;
+            color: var(--black);
+        }
+
+        .results-hero h1 em {
+            font-style: normal;
+            color: var(--accent2);
+        }
+
+        .hero-sub {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 300;
+            max-width: 580px;
+            line-height: 1.7;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            letter-spacing: 0.08em;
+            color: var(--grey);
+            text-transform: uppercase;
+        }
+
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        /* ── SECTION DIVIDER ── */
+        .section-divider {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+            margin: 0;
+        }
+
+        /* ── CASE STUDY ── */
+        .case-study {
+            padding: 6rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .case-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 3.5rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .case-label {
+            font-family: var(--mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--grey);
+            margin-bottom: 0.8rem;
+        }
+
+        .case-title {
+            font-size: clamp(1.6rem, 3vw, 2.5rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        .case-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            font-weight: 300;
+            max-width: 420px;
+            margin-top: 0.8rem;
+        }
+
+        /* ── MONTHS TABS ── */
+        .months-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .month-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.07);
+            transition: box-shadow 0.3s;
+        }
+
+        .month-card:hover {
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.07);
+        }
+
+        .month-label {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--grey);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .month-label::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        /* ── GSC METRICS ── */
+        .gsc-metrics {
+            display: flex;
+            gap: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            margin-bottom: 1.5rem;
+        }
+
+        .gsc-metric {
+            flex: 1;
+            padding: 1rem 1.2rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.07);
+            position: relative;
+        }
+
+        .gsc-metric:last-child {
+            border-right: none;
+        }
+
+        .gsc-metric.active-blue {
+            background: #4285f4;
+        }
+
+        .gsc-metric.active-purple {
+            background: #6c63ff;
+        }
+
+        .gsc-metric.active-blue .gsc-metric-label,
+        .gsc-metric.active-purple .gsc-metric-label {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .gsc-metric.active-blue .gsc-metric-val,
+        .gsc-metric.active-purple .gsc-metric-val {
+            color: #fff;
+        }
+
+        .gsc-metric-label {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--grey);
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .gsc-check {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            border: 2px solid currentColor;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
+        }
+
+        .gsc-metric.active-blue .gsc-check,
+        .gsc-metric.active-purple .gsc-check {
+            border-color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .gsc-metric-val {
+            font-size: clamp(1.4rem, 3vw, 2.2rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--black);
+        }
+
+        /* ── SVG CHART ── */
+        .chart-wrap {
+            background: var(--bg);
+            border-radius: 12px;
+            padding: 1.2rem 1.2rem 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .chart-axis-label {
+            font-family: var(--mono);
+            font-size: 0.58rem;
+            color: var(--grey);
+            position: absolute;
+            top: 0.8rem;
+            left: 1.2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .chart-axis-right {
+            font-family: var(--mono);
+            font-size: 0.58rem;
+            color: var(--grey);
+            position: absolute;
+            top: 0.8rem;
+            right: 1.2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .chart-svg {
+            width: 100%;
+            height: 120px;
+            overflow: visible;
+        }
+
+        .chart-dates {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.3rem 0 0.5rem;
+            font-family: var(--mono);
+            font-size: 0.58rem;
+            color: var(--grey);
+        }
+
+        /* ── TWO COLUMN GRID ── */
+        .months-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        /* ── HIGHLIGHT STRIP ── */
+        .highlight-strip {
+            background: var(--black);
+            padding: 5rem 3rem;
+            text-align: center;
+        }
+
+        .highlight-strip-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .highlight-strip h2 {
+            font-size: clamp(2rem, 5vw, 4.5rem);
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            color: #fff;
+            line-height: 1.1;
+        }
+
+        .highlight-strip h2 span {
+            color: var(--accent);
+        }
+
+        .highlight-strip p {
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin: 1.5rem auto 2.5rem;
+            max-width: 540px;
+            font-weight: 300;
+        }
+
+        /* ── COMPARISON TABLE ── */
+        .comparison-section {
+            padding: 6rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .comparison-section .sec-label {
+            font-family: var(--mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--grey);
+            margin-bottom: 1rem;
+        }
+
+        .comparison-section h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 3rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead tr {
+            border-bottom: 2px solid var(--black);
+        }
+
+        th {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--grey);
+            padding: 1rem 1.2rem;
+            text-align: left;
+            font-weight: 400;
+        }
+
+        td {
+            padding: 1.2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            font-size: 0.95rem;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .metric-highlight {
+            font-weight: 700;
+            color: var(--black);
+            font-size: 1.1rem;
+        }
+
+        .metric-good {
+            color: #22c55e;
+            font-weight: 600;
+        }
+
+        .metric-badge-tag {
+            display: inline-block;
+            background: var(--bg);
+            border-radius: 50px;
+            padding: 0.25rem 0.8rem;
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            letter-spacing: 0.06em;
+            color: var(--grey);
+        }
+
+        /* ── CTA ── */
+        .results-cta {
+            padding: 8rem 3rem;
+            text-align: center;
+            background: var(--bg);
+        }
+
+        .results-cta .eyebrow {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--grey);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .results-cta h2 {
+            font-size: clamp(2.5rem, 5vw, 5rem);
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .results-cta p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.7;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--black);
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            color: #fff;
+        }
+
+        .footer-copy {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .footer-back {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .footer-back:hover {
+            color: #fff;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 900px) {
+            .months-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gsc-metrics {
+                flex-wrap: wrap;
+            }
+
+            .gsc-metric {
+                flex: 1 1 45%;
+            }
+
+            .case-header {
+                flex-direction: column;
+            }
+
+            .header-nav {
+                display: none;
+            }
+
+            .header-inner {
+                padding: 1rem 1.5rem;
+            }
+
+            .results-hero,
+            .case-study,
+            .comparison-section,
+            .results-cta,
+            .highlight-strip {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">DIGICONSULTPRO</a>
+
+            <nav class="header-nav">
+                <a href="index.html">← BACK TO HOME</a>
+            </nav>
+
+            <a href="index.html#contact" class="btn-pill btn-dark">LET'S TALK <span class="btn-dot"></span></a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="results-hero">
+        <p class="eyebrow">/ Real Data. Real Clients. Real Growth.</p>
+        <h1>Proven SEO <em>Results</em><br>From Google.</h1>
+        <p class="hero-sub">These are actual Google Search Console reports from our live client campaigns — not
+            projections, not estimates. Real clicks, real impressions, real business growth.</p>
+        <div class="hero-badges">
+            <span class="badge"><span class="badge-dot"></span>Verified GSC Data</span>
+            <span class="badge"><span class="badge-dot"></span>April & March 2025</span>
+            <span class="badge"><span class="badge-dot"></span>2 Active Clients</span>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ══════════════ CLIENT 1 ══════════════ -->
+    <div class="case-study">
+        <div class="case-header">
+            <div>
+                <p class="case-label">/ Case Study 01 — Local Business</p>
+                <h2 class="case-title">High-CTR Local SEO Campaign</h2>
+                <p class="case-desc">A local business ranking for targeted keywords with an outstanding click-through
+                    rate of up to 11% — more than 4× the industry average of ~2–3%.</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:0.8rem; align-items:flex-end; flex-shrink:0;">
+                <div
+                    style="background:var(--white); border-radius:12px; padding:1rem 1.5rem; border:1px solid rgba(0,0,0,0.07); text-align:center;">
+                    <div
+                        style="font-family:var(--mono); font-size:0.62rem; color:var(--grey); text-transform:uppercase; letter-spacing:0.08em;">
+                        Peak CTR</div>
+                    <div style="font-size:2.5rem; font-weight:700; letter-spacing:-0.04em; color:#6c63ff;">11%</div>
+                    <div style="font-family:var(--mono); font-size:0.6rem; color:var(--grey);">4× industry avg</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="months-grid">
+            <!-- March 2025 -->
+            <div class="month-card">
+                <div class="month-label">March 2025 &nbsp;—&nbsp; 31 days</div>
+                <div class="gsc-metrics">
+                    <div class="gsc-metric active-blue">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total clicks</div>
+                        <div class="gsc-metric-val">526</div>
+                    </div>
+                    <div class="gsc-metric active-purple">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total impressions</div>
+                        <div class="gsc-metric-val">4.79K</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg CTR</div>
+                        <div class="gsc-metric-val">11%</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg position</div>
+                        <div class="gsc-metric-val">21.1</div>
+                    </div>
+                </div>
+                <div class="chart-wrap">
+                    <span class="chart-axis-label">Clicks</span>
+                    <span class="chart-axis-right">Impressions</span>
+                    <svg class="chart-svg" viewBox="0 0 600 100" preserveAspectRatio="none">
+                        <!-- Grid lines -->
+                        <line x1="0" y1="25" x2="600" y2="25" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="50" x2="600" y2="50" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="75" x2="600" y2="75" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <!-- Impressions line (purple) -->
+                        <polyline fill="none" stroke="#6c63ff" stroke-width="2"
+                            points="0,35 30,30 60,40 90,25 120,42 150,38 180,28 210,20 240,35 270,32 300,22 330,36 360,28 390,40 420,30 450,38 480,25 510,42 540,30 570,15 600,20" />
+                        <!-- Clicks line (blue) -->
+                        <polyline fill="none" stroke="#4285f4" stroke-width="2"
+                            points="0,55 30,48 60,65 90,50 120,70 150,58 180,48 210,40 240,60 270,52 300,42 330,60 360,50 390,65 420,52 450,60 480,45 510,70 540,50 570,40 600,55" />
+                    </svg>
+                    <div class="chart-dates">
+                        <span>3/1/25</span><span>3/7/25</span><span>3/13/25</span><span>3/19/25</span><span>3/25/25</span><span>3/31/25</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- April 2025 -->
+            <div class="month-card">
+                <div class="month-label">April 2025 &nbsp;—&nbsp; 28 days</div>
+                <div class="gsc-metrics">
+                    <div class="gsc-metric active-blue">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total clicks</div>
+                        <div class="gsc-metric-val">426</div>
+                    </div>
+                    <div class="gsc-metric active-purple">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total impressions</div>
+                        <div class="gsc-metric-val">4.31K</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg CTR</div>
+                        <div class="gsc-metric-val">9.9%</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg position</div>
+                        <div class="gsc-metric-val">22.3</div>
+                    </div>
+                </div>
+                <div class="chart-wrap">
+                    <span class="chart-axis-label">Clicks</span>
+                    <span class="chart-axis-right">Impressions</span>
+                    <svg class="chart-svg" viewBox="0 0 560 100" preserveAspectRatio="none">
+                        <line x1="0" y1="25" x2="560" y2="25" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="50" x2="560" y2="50" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="75" x2="560" y2="75" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <polyline fill="none" stroke="#6c63ff" stroke-width="2"
+                            points="0,30 40,25 80,35 120,20 160,38 200,15 240,40 280,25 320,32 360,20 400,35 440,25 480,18 520,32 560,40" />
+                        <polyline fill="none" stroke="#4285f4" stroke-width="2"
+                            points="0,50 40,42 80,58 120,45 160,65 200,40 240,62 280,50 320,55 360,42 400,60 440,48 480,38 520,55 560,65" />
+                    </svg>
+                    <div class="chart-dates">
+                        <span>4/1/25</span><span>4/7/25</span><span>4/13/25</span><span>4/19/25</span><span>4/25/25</span><span>4/28/25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══════════════ CLIENT 2 ══════════════ -->
+    <div class="case-study">
+        <div class="case-header">
+            <div>
+                <p class="case-label">/ Case Study 02 — Broad Market</p>
+                <h2 class="case-title">High-Volume Impression Campaign</h2>
+                <p class="case-desc">A business targeting competitive broad-market keywords achieving over 28,000
+                    impressions per month with steadily improving average position from 13.2 → 12.7.</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:0.8rem; align-items:flex-end; flex-shrink:0;">
+                <div
+                    style="background:var(--white); border-radius:12px; padding:1rem 1.5rem; border:1px solid rgba(0,0,0,0.07); text-align:center;">
+                    <div
+                        style="font-family:var(--mono); font-size:0.62rem; color:var(--grey); text-transform:uppercase; letter-spacing:0.08em;">
+                        Peak Impressions</div>
+                    <div style="font-size:2.5rem; font-weight:700; letter-spacing:-0.04em; color:#6c63ff;">28.3K</div>
+                    <div style="font-family:var(--mono); font-size:0.6rem; color:var(--grey);">Monthly searches visible
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="months-grid">
+            <!-- March 2025 -->
+            <div class="month-card">
+                <div class="month-label">March 2025 &nbsp;—&nbsp; 31 days</div>
+                <div class="gsc-metrics">
+                    <div class="gsc-metric active-blue">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total clicks</div>
+                        <div class="gsc-metric-val">577</div>
+                    </div>
+                    <div class="gsc-metric active-purple">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total impressions</div>
+                        <div class="gsc-metric-val">28.3K</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg CTR</div>
+                        <div class="gsc-metric-val">2%</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg position</div>
+                        <div class="gsc-metric-val">12.7</div>
+                    </div>
+                </div>
+                <div class="chart-wrap">
+                    <span class="chart-axis-label">Clicks</span>
+                    <span class="chart-axis-right">Impressions</span>
+                    <svg class="chart-svg" viewBox="0 0 600 100" preserveAspectRatio="none">
+                        <line x1="0" y1="25" x2="600" y2="25" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="50" x2="600" y2="50" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="75" x2="600" y2="75" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <polyline fill="none" stroke="#6c63ff" stroke-width="2"
+                            points="0,25 30,28 60,22 90,30 120,18 150,25 180,20 210,28 240,15 270,22 300,30 330,20 360,25 390,18 420,30 450,22 480,28 510,20 540,15 570,22 600,18" />
+                        <polyline fill="none" stroke="#4285f4" stroke-width="2"
+                            points="0,55 30,60 60,50 90,65 120,45 150,55 180,48 210,62 240,42 270,55 300,65 330,50 360,58 390,45 420,62 450,52 480,60 510,48 540,40 570,52 600,45" />
+                    </svg>
+                    <div class="chart-dates">
+                        <span>3/1/25</span><span>3/7/25</span><span>3/13/25</span><span>3/19/25</span><span>3/25/25</span><span>3/31/25</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- April 2025 -->
+            <div class="month-card">
+                <div class="month-label">April 2025 &nbsp;—&nbsp; 28 days</div>
+                <div class="gsc-metrics">
+                    <div class="gsc-metric active-blue">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total clicks</div>
+                        <div class="gsc-metric-val">561</div>
+                    </div>
+                    <div class="gsc-metric active-purple">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total impressions</div>
+                        <div class="gsc-metric-val">25.7K</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg CTR</div>
+                        <div class="gsc-metric-val">2.2%</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg position</div>
+                        <div class="gsc-metric-val">13.2</div>
+                    </div>
+                </div>
+                <div class="chart-wrap">
+                    <span class="chart-axis-label">Clicks</span>
+                    <span class="chart-axis-right">Impressions</span>
+                    <svg class="chart-svg" viewBox="0 0 560 100" preserveAspectRatio="none">
+                        <line x1="0" y1="25" x2="560" y2="25" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="50" x2="560" y2="50" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="75" x2="560" y2="75" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <polyline fill="none" stroke="#6c63ff" stroke-width="2"
+                            points="0,28 40,22 80,30 120,18 160,25 200,15 240,28 280,20 320,25 360,18 400,28 440,22 480,15 520,25 560,20" />
+                        <polyline fill="none" stroke="#4285f4" stroke-width="2"
+                            points="0,58 40,48 80,62 120,45 160,58 200,42 240,60 280,50 320,55 360,45 400,60 440,50 480,40 520,55 560,48" />
+                    </svg>
+                    <div class="chart-dates">
+                        <span>4/1/25</span><span>4/7/25</span><span>4/13/25</span><span>4/19/25</span><span>4/25/25</span><span>4/28/25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ══════════════ CLIENT 3 ══════════════ -->
+    <div class="case-study">
+        <div class="case-header">
+            <div>
+                <p class="case-label">/ Case Study 03 — Rapid Ranking Growth</p>
+                <h2 class="case-title">4× Click Growth in One Month</h2>
+                <p class="case-desc">A new campaign that exploded from 86 clicks in April to 337 clicks in May — a
+                    <strong>292% increase</strong> — as targeted SEO work pushed their average position from 24.5 all
+                    the way to 12.2 over three months. This is compounding SEO at work.</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:0.8rem; align-items:flex-end; flex-shrink:0;">
+                <div
+                    style="background:var(--white); border-radius:12px; padding:1rem 1.5rem; border:1px solid rgba(0,0,0,0.07); text-align:center;">
+                    <div
+                        style="font-family:var(--mono); font-size:0.62rem; color:var(--grey); text-transform:uppercase; letter-spacing:0.08em;">
+                        Click Growth</div>
+                    <div style="font-size:2.5rem; font-weight:700; letter-spacing:-0.04em; color:#22c55e;">+292%</div>
+                    <div style="font-family:var(--mono); font-size:0.6rem; color:var(--grey);">Apr → May in 30 days
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="months-grid">
+            <!-- April 2025 -->
+            <div class="month-card">
+                <div class="month-label">April 2025 &nbsp;—&nbsp; 28 days</div>
+                <div class="gsc-metrics">
+                    <div class="gsc-metric active-blue">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total clicks</div>
+                        <div class="gsc-metric-val">86</div>
+                    </div>
+                    <div class="gsc-metric active-purple">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total impressions</div>
+                        <div class="gsc-metric-val">2.86K</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg CTR</div>
+                        <div class="gsc-metric-val">3%</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg position</div>
+                        <div class="gsc-metric-val">24.5</div>
+                    </div>
+                </div>
+                <div class="chart-wrap">
+                    <span class="chart-axis-label">Clicks</span>
+                    <span class="chart-axis-right">Impressions</span>
+                    <svg class="chart-svg" viewBox="0 0 560 100" preserveAspectRatio="none">
+                        <line x1="0" y1="25" x2="560" y2="25" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="50" x2="560" y2="50" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="75" x2="560" y2="75" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <!-- Impressions - moderate midrange -->
+                        <polyline fill="none" stroke="#6c63ff" stroke-width="2"
+                            points="0,40 56,35 112,45 168,30 224,42 280,25 336,38 392,32 448,42 504,30 560,38" />
+                        <!-- Clicks - low range -->
+                        <polyline fill="none" stroke="#4285f4" stroke-width="2"
+                            points="0,68 56,75 112,60 168,80 224,58 280,72 336,65 392,78 448,60 504,70 560,78" />
+                    </svg>
+                    <div class="chart-dates">
+                        <span>1/04</span><span>5/04</span><span>9/04</span><span>13/04</span><span>17/04</span><span>21/04</span><span>25/04</span><span>28/04</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- May 2025 -->
+            <div class="month-card">
+                <div class="month-label">May 2025 &nbsp;—&nbsp; 31 days</div>
+                <div class="gsc-metrics">
+                    <div class="gsc-metric active-blue">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total clicks</div>
+                        <div class="gsc-metric-val">337</div>
+                    </div>
+                    <div class="gsc-metric active-purple">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total impressions</div>
+                        <div class="gsc-metric-val">11K</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg CTR</div>
+                        <div class="gsc-metric-val">3.1%</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg position</div>
+                        <div class="gsc-metric-val">13.8</div>
+                    </div>
+                </div>
+                <div class="chart-wrap">
+                    <span class="chart-axis-label">Clicks</span>
+                    <span class="chart-axis-right">Impressions</span>
+                    <svg class="chart-svg" viewBox="0 0 560 100" preserveAspectRatio="none">
+                        <line x1="0" y1="25" x2="560" y2="25" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="50" x2="560" y2="50" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="75" x2="560" y2="75" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <!-- Impressions - high, relatively flat -->
+                        <polyline fill="none" stroke="#6c63ff" stroke-width="2"
+                            points="0,32 56,28 112,38 168,22 224,35 280,18 336,30 392,25 448,32 504,20 560,28" />
+                        <!-- Clicks - moderate with spikes -->
+                        <polyline fill="none" stroke="#4285f4" stroke-width="2"
+                            points="0,55 56,48 112,72 168,38 224,60 280,28 336,55 392,42 448,60 504,35 560,50" />
+                    </svg>
+                    <div class="chart-dates">
+                        <span>1/05</span><span>5/05</span><span>9/05</span><span>13/05</span><span>17/05</span><span>21/05</span><span>25/05</span><span>28/05</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- June 2025 -->
+            <div class="month-card">
+                <div class="month-label">June 2025 &nbsp;—&nbsp; 28 days</div>
+                <div class="gsc-metrics">
+                    <div class="gsc-metric active-blue">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total clicks</div>
+                        <div class="gsc-metric-val">337</div>
+                    </div>
+                    <div class="gsc-metric active-purple">
+                        <div class="gsc-metric-label"><span class="gsc-check">✓</span> Total impressions</div>
+                        <div class="gsc-metric-val">11.3K</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg CTR</div>
+                        <div class="gsc-metric-val">3%</div>
+                    </div>
+                    <div class="gsc-metric">
+                        <div class="gsc-metric-label">☐ Avg position</div>
+                        <div class="gsc-metric-val">12.2</div>
+                    </div>
+                </div>
+                <div class="chart-wrap">
+                    <span class="chart-axis-label">Clicks</span>
+                    <span class="chart-axis-right">Impressions</span>
+                    <svg class="chart-svg" viewBox="0 0 560 100" preserveAspectRatio="none">
+                        <line x1="0" y1="25" x2="560" y2="25" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="50" x2="560" y2="50" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <line x1="0" y1="75" x2="560" y2="75" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+                        <!-- Impressions - high, trending up slightly -->
+                        <polyline fill="none" stroke="#6c63ff" stroke-width="2"
+                            points="0,35 56,30 112,38 168,28 224,35 280,25 336,32 392,22 448,28 504,18 560,22" />
+                        <!-- Clicks - steady with upward trend -->
+                        <polyline fill="none" stroke="#4285f4" stroke-width="2"
+                            points="0,52 56,48 112,58 168,45 224,55 280,42 336,50 392,38 448,45 504,32 560,38" />
+                    </svg>
+                    <div class="chart-dates">
+                        <span>1/06</span><span>5/06</span><span>9/06</span><span>13/06</span><span>17/06</span><span>21/06</span><span>25/06</span><span>28/06</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HIGHLIGHT STRIP -->
+    <div class="highlight-strip">
+        <div class="highlight-strip-inner">
+            <h2>1,300+ monthly clicks.<br><span>45K+ monthly impressions.</span></h2>
+            <p>Combined results across all 3 active campaigns — and these numbers grow every month as our SEO work
+                compounds and keyword rankings keep improving.</p>
+            <a href="index.html#contact" class="btn-pill btn-dark" style="font-size:0.9rem; padding:0.8rem 2rem;">
+                Get Your Business Growing <span class="btn-dot"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div class="comparison-section">
+        <p class="sec-label">/ All Metrics at a Glance</p>
+        <h2>Full Results Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Client</th>
+                    <th>Period</th>
+                    <th>Total Clicks</th>
+                    <th>Impressions</th>
+                    <th>Avg CTR</th>
+                    <th>Avg Position</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Client 01</strong></td>
+                    <td style="font-family:var(--mono); font-size:0.8rem;">March 2025</td>
+                    <td class="metric-highlight">526</td>
+                    <td class="metric-highlight">4.79K</td>
+                    <td class="metric-good">11%</td>
+                    <td>21.1</td>
+                    <td><span class="metric-badge-tag">Local SEO</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Client 01</strong></td>
+                    <td style="font-family:var(--mono); font-size:0.8rem;">April 2025</td>
+                    <td class="metric-highlight">426</td>
+                    <td class="metric-highlight">4.31K</td>
+                    <td class="metric-good">9.9%</td>
+                    <td>22.3</td>
+                    <td><span class="metric-badge-tag">Local SEO</span></td>
+                </tr>
+                <tr style="background:rgba(0,0,0,0.018);">
+                    <td><strong>Client 02</strong></td>
+                    <td style="font-family:var(--mono); font-size:0.8rem;">March 2025</td>
+                    <td class="metric-highlight">577</td>
+                    <td class="metric-highlight">28.3K</td>
+                    <td class="metric-good">2%</td>
+                    <td>12.7</td>
+                    <td><span class="metric-badge-tag">Broad Market</span></td>
+                </tr>
+                <tr style="background:rgba(0,0,0,0.018);">
+                    <td><strong>Client 02</strong></td>
+                    <td style="font-family:var(--mono); font-size:0.8rem;">April 2025</td>
+                    <td class="metric-highlight">561</td>
+                    <td class="metric-highlight">25.7K</td>
+                    <td class="metric-good">2.2%</td>
+                    <td>13.2</td>
+                    <td><span class="metric-badge-tag">Broad Market</span></td>
+                </tr>
+                <tr style="background:rgba(108,99,255,0.04); border-left:3px solid #f59e0b;">
+                    <td><strong>Client 03</strong></td>
+                    <td style="font-family:var(--mono); font-size:0.8rem;">April 2025</td>
+                    <td class="metric-highlight">86</td>
+                    <td class="metric-highlight">2.86K</td>
+                    <td class="metric-good">3%</td>
+                    <td>24.5</td>
+                    <td><span class="metric-badge-tag">Rapid Growth</span></td>
+                </tr>
+                <tr style="background:rgba(34,197,94,0.06);">
+                    <td><strong>Client 03</strong></td>
+                    <td style="font-family:var(--mono); font-size:0.8rem;">May 2025 ↑</td>
+                    <td class="metric-highlight" style="color:#22c55e;">337</td>
+                    <td class="metric-highlight" style="color:#22c55e;">11K</td>
+                    <td class="metric-good">3.1%</td>
+                    <td style="color:#22c55e; font-weight:600;">13.8</td>
+                    <td><span class="metric-badge-tag" style="background:rgba(34,197,94,0.1); color:#16a34a;">+292%
+                            clicks</span></td>
+                </tr>
+                <tr style="background:rgba(34,197,94,0.09);">
+                    <td><strong>Client 03</strong></td>
+                    <td style="font-family:var(--mono); font-size:0.8rem;">June 2025 ↑</td>
+                    <td class="metric-highlight" style="color:#22c55e;">337</td>
+                    <td class="metric-highlight" style="color:#22c55e;">11.3K</td>
+                    <td class="metric-good">3%</td>
+                    <td style="color:#22c55e; font-weight:600;">12.2 🏆</td>
+                    <td><span class="metric-badge-tag" style="background:rgba(34,197,94,0.1); color:#16a34a;">Best
+                            position</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- CTA -->
+    <div class="results-cta">
+        <span class="eyebrow">/ Start Your Growth</span>
+        <h2>Ready to see your<br>name in these results?</h2>
+        <p>These are real numbers from real clients. Your business could be next. Let's build your online presence
+            together.</p>
+        <a href="index.html#contact" class="btn-pill btn-dark" style="font-size:0.95rem; padding:0.9rem 2.2rem;">
+            GET A FREE AUDIT <span class="btn-dot"></span>
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">DigiConsultPro</div>
+        <span class="footer-copy">© 2024 DigiConsultPro — All rights reserved</span>
+        <span class="footer-back" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ BACK TO TOP</span>
+    </footer>
+
+    <script>
+        // Back to top
+        document.querySelector('.footer-back')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Animate numbers on scroll
+        const nums = document.querySelectorAll('.gsc-metric-val');
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = '1'; io.unobserve(e.target); } });
+        }, { threshold: 0.3 });
+        nums.forEach(n => { n.style.opacity = '0'; n.style.transition = 'opacity 0.6s ease'; io.observe(n); });
+    </script>
+</body>
+
+</html>
